@@ -198,9 +198,9 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.85, filter: "blur(8px)" }}
           animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.9, ease: EASE_OUT }}
-          className="flex items-center gap-1.5 text-[22px] font-medium tracking-tight"
+          className="flex items-center gap-[7px] text-[26px] font-medium tracking-tight"
         >
-          <LogoMark className="h-7" />
+          <LogoMark className="h-[34px]" />
           Belgrade
         </motion.div>
 
@@ -264,7 +264,7 @@ export function Hero() {
                 <Star key={i} className="size-3.5 fill-current" />
               ))}
             </div>
-            <p className="mt-0.5 text-xs font-light text-muted-foreground">
+            <p className="mt-1 text-xs font-light text-muted-foreground dark:text-foreground/70">
               Loved by 10,000+ users worldwide
             </p>
           </div>
