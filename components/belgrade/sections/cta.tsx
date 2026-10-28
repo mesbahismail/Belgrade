@@ -64,7 +64,7 @@ export function CallToAction() {
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute top-14 left-[4%] rotate-[14deg] [zoom:0.85]"
+                  className="absolute top-14 left-[1%] rotate-[14deg] [zoom:0.85]"
                 >
                   <Phone className="dark">
                     <SplashScreen />
@@ -78,7 +78,7 @@ export function CallToAction() {
                     ease: "easeInOut",
                     delay: 0.8,
                   }}
-                  className="absolute top-4 left-[48%] rotate-[11deg] [zoom:0.85]"
+                  className="absolute top-4 left-[57%] rotate-[11deg] [zoom:0.85]"
                 >
                   <Phone>
                     <CardsScreen />

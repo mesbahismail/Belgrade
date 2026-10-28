@@ -7,7 +7,7 @@ A free, animated landing page template for a fintech / wallet app, distributed a
 - **Sections:** hero with device mockups, partner marquee, feature grid, bento features,
   scroll-tilted phone with callouts, orbiting integrations, reviews, screen carousel,
   benefits slider, chat-style FAQ, call to action, footer
-- **Themes:** light and dark, with a circular View Transition when switching
+- **Themes:** dark by default plus light, with a circular View Transition when switching
 - **Stack:** Next.js 16, React 19, Tailwind CSS 4, shadcn/ui, Motion, Lucide icons
 
 All phone screens are built in JSX and Tailwind (no screenshots), so they follow the theme
@@ -57,9 +57,11 @@ Run step 2 again whenever you change a file under `components/belgrade` or one o
 - **Brand colors:** the `--brand*` tokens in `app/globals.css` (and `cssVars` in `registry.json`).
 - **Partner logos** (`sections/partners.tsx`) are placeholder wordmarks. Swap in your own.
 - **Photos** on About and Contact and the hero avatars load from Unsplash. Replace them with your own images.
+- **Video ad:** "View video ad" in the hero opens `video-dialog.tsx`. Put your video at
+  `public/videos/belgrade-ad.mp4`, or change `VIDEO_AD_SRC` in `sections/hero.tsx`.
 - **Contact form** (`contact-form.tsx`) only validates and shows a success state. Connect it to a
   Server Action or API route.
 - **Legal pages** use placeholder text. Pass your own content as `children` to `<LegalPage>`.
-- **Footer credit:** the design is based on ThemeFellas' Belgrade template, credited in `site-footer.tsx`.
+- **Footer credit:** "Designed with care by Mesbah Lab" in `site-footer.tsx`. Swap in your own name and link.
 
 Animations respect `prefers-reduced-motion`.

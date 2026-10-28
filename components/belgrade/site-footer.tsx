@@ -36,7 +36,7 @@ export function SiteFooter() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="relative text-[17px] text-foreground/75 transition-colors after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:text-foreground hover:after:scale-x-100"
+                    className="relative text-[15px] text-foreground/75 transition-colors after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:text-foreground hover:after:scale-x-100"
                   >
                     {link.label}
                   </Link>
@@ -46,16 +46,16 @@ export function SiteFooter() {
           </nav>
         </Reveal>
 
-        <div className="mt-14 grid items-center gap-6 text-center text-[17px] font-light text-muted-foreground md:grid-cols-3 md:text-left">
+        <div className="mt-14 grid items-center gap-6 text-center text-[15px] font-light text-muted-foreground md:grid-cols-3 md:text-left">
           <p className="order-3 md:order-1">
             Designed with care by{" "}
             <a
-              href="https://themefellas.com"
+              href="https://github.com/mesbahismail"
               target="_blank"
               rel="noreferrer"
               className="text-foreground underline underline-offset-4 transition-colors hover:text-brand"
             >
-              ThemeFellas
+              Mesbah Lab
             </a>
           </p>
           <ul className="order-1 flex justify-center gap-6 md:order-2">

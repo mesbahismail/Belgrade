@@ -36,12 +36,17 @@ export function SiteHeader() {
     >
       <div
         className={cn(
-          "relative mx-auto max-w-[792px] rounded-2xl border border-border bg-surface backdrop-blur-xl transition-[box-shadow,background-color] duration-500",
+          "relative mx-auto max-w-[792px] rounded-2xl border border-black/[0.07] bg-surface backdrop-blur-2xl backdrop-saturate-150 transition-[box-shadow,background-color] duration-500 dark:border-white/10",
           scrolled
-            ? "shadow-[0_18px_40px_-18px_rgb(0_0_0/0.35)]"
-            : "shadow-[0_14px_30px_-20px_rgb(0_0_0/0.3)]"
+            ? "shadow-[inset_0_1px_0_rgb(255_255_255/0.1),0_18px_40px_-18px_rgb(0_0_0/0.45)]"
+            : "shadow-[inset_0_1px_0_rgb(255_255_255/0.1),0_14px_30px_-20px_rgb(0_0_0/0.35)]"
         )}
       >
+        {/* Glass edge: a soft highlight along the top rim. */}
+        <span
+          aria-hidden
+          className="pointer-events-none absolute inset-x-8 -top-px h-px bg-linear-to-r from-transparent via-white/70 to-transparent dark:via-white/35"
+        />
         <div className="flex h-14 items-center justify-between pr-3 pl-4">
           <Logo className="text-[19px]" markClassName="h-6" />
 

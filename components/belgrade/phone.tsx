@@ -21,7 +21,7 @@ export function Phone({
   return (
     <div
       className={cn(
-        "relative h-[580px] w-[280px] shrink-0 rounded-[46px] bg-phone-frame p-[7px] text-foreground shadow-[0_0_0_1px_var(--phone-bezel),0_40px_80px_-30px_rgb(0_0_0/0.35)] select-none",
+        "relative h-[580px] w-[280px] shrink-0 rounded-[46px] bg-phone-frame p-[7px] text-foreground shadow-[0_0_0_1px_var(--phone-bezel),inset_0_1px_1px_rgb(255_255_255/0.14),0_40px_80px_-30px_rgb(0_0_0/0.35)] select-none",
         className
       )}
     >
@@ -34,7 +34,11 @@ export function Phone({
         <StatusBar time={time} />
         {children}
         <div className="pointer-events-none absolute bottom-2 left-1/2 h-[4px] w-24 -translate-x-1/2 rounded-full bg-foreground/85" />
+        {/* Glass reflection catching light from the top left. */}
+        <div className="pointer-events-none absolute inset-0 z-20 bg-[linear-gradient(135deg,rgb(255_255_255/0.08),rgb(255_255_255/0.02)_32%,transparent_46%)]" />
       </div>
+      {/* Rim light: a 1px metallic edge, brightest where the light hits. */}
+      <div className="pointer-events-none absolute inset-0 rounded-[46px] bg-[linear-gradient(150deg,rgb(255_255_255/0.55),rgb(255_255_255/0.06)_28%,transparent_55%,rgb(255_255_255/0.14))] p-px [mask:linear-gradient(#000_0_0)_content-box_exclude,linear-gradient(#000_0_0)]" />
     </div>
   )
 }

@@ -12,7 +12,7 @@ const buttonBase =
 
 const buttonVariants = {
   brand:
-    "border border-brand-edge bg-linear-to-b from-brand-from to-brand-to text-white shadow-[inset_0_1px_0_rgb(255_255_255/0.35),0_10px_24px_-10px_rgb(74_119_166/0.9)] hover:brightness-110",
+    "border border-brand-edge bg-linear-to-b from-brand-from to-brand-to text-white shadow-[inset_0_1px_0_rgb(255_255_255/0.2),0_10px_24px_-10px_rgb(74_119_166/0.9)] hover:brightness-110",
   soft: "border border-border bg-card text-foreground shadow-[0_4px_14px_-6px_rgb(0_0_0/0.18)] before:via-foreground/5 hover:bg-muted/60",
 }
 

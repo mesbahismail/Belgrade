@@ -13,10 +13,11 @@ type Theme = "light" | "dark"
 // Same storage key and class strategy as next-themes, so both can coexist.
 const STORAGE_KEY = "theme"
 
-const themeScript = `(function(){try{var s=localStorage.getItem("${STORAGE_KEY}");var d=s==="dark"||((!s||s==="system")&&matchMedia("(prefers-color-scheme: dark)").matches);var e=document.documentElement;e.classList.toggle("dark",d);e.style.colorScheme=d?"dark":"light"}catch(_){}})()`
+const themeScript = `(function(){var d=true;try{var s=localStorage.getItem("${STORAGE_KEY}");d=s==="system"?matchMedia("(prefers-color-scheme: dark)").matches:s!=="light"}catch(_){}var e=document.documentElement;e.classList.toggle("dark",d);e.style.colorScheme=d?"dark":"light"})()`
 
 /**
- * Applies the saved (or system) theme before first paint.
+ * Applies the saved theme before first paint. Dark is the default until the
+ * visitor picks light.
  * Renders as an inert `text/plain` script on the client to avoid React's
  * script-tag warning; the server-rendered copy is the one that executes.
  */
