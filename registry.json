@@ -1,0 +1,325 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "belgrade",
+  "homepage": "https://belgrade.example.com",
+  "items": [
+    {
+      "name": "belgrade",
+      "type": "registry:block",
+      "title": "Belgrade — Wallet App Landing Page",
+      "description": "A free, animated landing page template for a fintech / wallet app: hero with device mockups, partner marquee, bento features, orbiting integrations, reviews, carousels, chat-style FAQ, CTA, plus About, Contact, Privacy and Terms pages. Light and dark themes.",
+      "author": "MESBAH LAB",
+      "categories": [
+        "landing-page",
+        "template",
+        "marketing",
+        "fintech",
+        "free"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "input",
+        "textarea",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/belgrade/brand-icons.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/brand-icons.tsx"
+        },
+        {
+          "path": "components/belgrade/contact-form.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/contact-form.tsx"
+        },
+        {
+          "path": "components/belgrade/legal-page.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/legal-page.tsx"
+        },
+        {
+          "path": "components/belgrade/logo.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/logo.tsx"
+        },
+        {
+          "path": "components/belgrade/motion.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/motion.tsx"
+        },
+        {
+          "path": "components/belgrade/phone.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/phone.tsx"
+        },
+        {
+          "path": "components/belgrade/screens.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/screens.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/benefits.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/benefits.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/bento.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/bento.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/cta.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/cta.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/faq.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/faq.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/features.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/features.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/hero.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/hero.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/integrations.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/integrations.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/partners.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/partners.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/reviews.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/reviews.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/showcase.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/showcase.tsx"
+        },
+        {
+          "path": "components/belgrade/sections/smarter-way.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/sections/smarter-way.tsx"
+        },
+        {
+          "path": "components/belgrade/site-footer.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/site-footer.tsx"
+        },
+        {
+          "path": "components/belgrade/site-header.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/site-header.tsx"
+        },
+        {
+          "path": "components/belgrade/site-shell.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/site-shell.tsx"
+        },
+        {
+          "path": "components/belgrade/split-card.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/split-card.tsx"
+        },
+        {
+          "path": "components/belgrade/theme.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/theme.tsx"
+        },
+        {
+          "path": "components/belgrade/ui.tsx",
+          "type": "registry:component",
+          "target": "components/belgrade/ui.tsx"
+        },
+        {
+          "path": "app/about/page.tsx",
+          "type": "registry:page",
+          "target": "app/about/page.tsx"
+        },
+        {
+          "path": "app/contact/page.tsx",
+          "type": "registry:page",
+          "target": "app/contact/page.tsx"
+        },
+        {
+          "path": "app/page.tsx",
+          "type": "registry:page",
+          "target": "app/page.tsx"
+        },
+        {
+          "path": "app/privacy/page.tsx",
+          "type": "registry:page",
+          "target": "app/privacy/page.tsx"
+        },
+        {
+          "path": "app/terms/page.tsx",
+          "type": "registry:page",
+          "target": "app/terms/page.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "font-belgrade": "var(--font-jakarta), ui-sans-serif, system-ui, sans-serif",
+          "color-brand": "var(--brand)",
+          "color-brand-foreground": "var(--brand-foreground)",
+          "color-brand-soft": "var(--brand-soft)",
+          "color-brand-from": "var(--brand-from)",
+          "color-brand-to": "var(--brand-to)",
+          "color-brand-edge": "var(--brand-edge)",
+          "color-surface": "var(--surface)",
+          "color-phone-frame": "var(--phone-frame)",
+          "color-phone-bezel": "var(--phone-bezel)",
+          "color-phone-screen": "var(--phone-screen)",
+          "color-phone-card": "var(--phone-card)",
+          "color-phone-line": "var(--phone-line)",
+          "animate-marquee": "marquee var(--marquee-duration, 45s) linear infinite",
+          "animate-typing": "typing 1.1s ease-in-out infinite",
+          "animate-card-shine": "card-shine 5s ease-in-out infinite",
+          "animate-progress": "progress 6s linear forwards"
+        },
+        "light": {
+          "brand": "#5a86b5",
+          "brand-foreground": "#ffffff",
+          "brand-soft": "#93b2d4",
+          "brand-from": "#719dca",
+          "brand-to": "#4a77a6",
+          "brand-edge": "#42709f",
+          "surface": "rgb(250 250 250 / 0.78)",
+          "phone-frame": "#ffffff",
+          "phone-bezel": "#e3e3e3",
+          "phone-screen": "#f4f4f4",
+          "phone-card": "#ffffff",
+          "phone-line": "#ebebeb",
+          "hero-glow": "rgb(255 255 255 / 0.95)"
+        },
+        "dark": {
+          "brand": "#6f9fd4",
+          "brand-foreground": "#ffffff",
+          "brand-soft": "#6c9cd2",
+          "brand-from": "#93b9e2",
+          "brand-to": "#5d8dc2",
+          "brand-edge": "rgb(255 255 255 / 0.75)",
+          "surface": "rgb(16 16 16 / 0.78)",
+          "phone-frame": "#151515",
+          "phone-bezel": "#2b2b2b",
+          "phone-screen": "#0b0b0b",
+          "phone-card": "#161616",
+          "phone-line": "#232323",
+          "hero-glow": "rgb(150 170 200 / 0.12)"
+        }
+      },
+      "css": {
+        ":root:has(.belgrade)": {
+          "--background": "#eeeeee",
+          "--foreground": "#0f0f0f",
+          "--card": "#ffffff",
+          "--card-foreground": "#0f0f0f",
+          "--popover": "#ffffff",
+          "--popover-foreground": "#0f0f0f",
+          "--primary": "#4a77a6",
+          "--primary-foreground": "#ffffff",
+          "--secondary": "#f6f6f6",
+          "--secondary-foreground": "#0f0f0f",
+          "--muted": "#e4e4e4",
+          "--muted-foreground": "#6b6b6b",
+          "--accent": "#e7e7e7",
+          "--accent-foreground": "#0f0f0f",
+          "--border": "#d9d9d9",
+          "--input": "#d2d2d2",
+          "--ring": "#7ea6d1",
+          "--radius": "0.75rem"
+        },
+        ":root.dark:has(.belgrade), .belgrade .dark": {
+          "--background": "#080808",
+          "--foreground": "#f3f3f3",
+          "--card": "#121212",
+          "--card-foreground": "#f3f3f3",
+          "--popover": "#121212",
+          "--popover-foreground": "#f3f3f3",
+          "--primary": "#7aa6d6",
+          "--primary-foreground": "#ffffff",
+          "--secondary": "#161616",
+          "--secondary-foreground": "#f3f3f3",
+          "--muted": "#1a1a1a",
+          "--muted-foreground": "#9a9a9a",
+          "--accent": "#1c1c1c",
+          "--accent-foreground": "#f3f3f3",
+          "--border": "#262626",
+          "--input": "#2c2c2c",
+          "--ring": "#5f8fc4"
+        },
+        "@keyframes marquee": {
+          "from": {
+            "transform": "translateX(0)"
+          },
+          "to": {
+            "transform": "translateX(-50%)"
+          }
+        },
+        "@keyframes typing": {
+          "0%, 60%, 100%": {
+            "opacity": "0.25",
+            "transform": "translateY(0)"
+          },
+          "30%": {
+            "opacity": "1",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "@keyframes progress": {
+          "from": {
+            "transform": "scaleX(0)"
+          },
+          "to": {
+            "transform": "scaleX(1)"
+          }
+        },
+        "@keyframes card-shine": {
+          "0%, 55%": {
+            "transform": "translateX(0) skewX(-12deg)"
+          },
+          "100%": {
+            "transform": "translateX(560%) skewX(-12deg)"
+          }
+        },
+        "@layer base": {
+          "::view-transition-old(root), ::view-transition-new(root)": {
+            "animation": "none",
+            "mix-blend-mode": "normal"
+          }
+        },
+        "@media (prefers-reduced-motion: reduce)": {
+          ".animate-marquee, .animate-card-shine, .animate-progress": {
+            "animation": "none"
+          }
+        }
+      },
+      "docs": "Belgrade installed. Add suppressHydrationWarning to the <html> tag in app/layout.tsx: the theme script sets the dark class before first paint. Belgrade's palette only applies on pages that render <SiteShell>, so the rest of your app keeps its theme. The contact form is a demo; wire it to a Server Action to send messages.",
+      "meta": {
+        "framework": "next",
+        "pages": [
+          "/",
+          "/about",
+          "/contact",
+          "/privacy",
+          "/terms"
+        ]
+      }
+    }
+  ]
+}
